@@ -104,16 +104,6 @@ struct NTT {
     }
 };
 
-int main(int argc, char *argv[]) {
-    cin >> n;
-    // NTT a1(167772161);
-    NTT a2(998244353);
-    vector<int> _a(n), _b(n);
-    rep(i, n) cin >> _a[i] >> _b[i];
-    // auto b1 = a1.convolution(_a, _b, a1.mod);
-    auto b2 = a2.convolution(_a, _b, a2.mod);
 
-    while (b2.size() < 2 * n) b2.push_back(0);
-    cout << 0 << endl;
-    rep(i, 2 * n - 1) cout << b2[i] << endl;
-}
+//NTT hoge(998244353)で宣言。
+//hoge.convolution(f, g, mod)で計算。
