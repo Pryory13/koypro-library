@@ -8,7 +8,7 @@ using ll = long long;
 
 ll InversionNumber(vector<ll> a) {
     ll n = a.size();
-    fenwick_tree<ll> fw(100005);
+    fenwick_tree<ll> fw(200005);
     ll ans = 0;
     rep(j, n) {
         ans += j - fw.sum(0, a[j]);
